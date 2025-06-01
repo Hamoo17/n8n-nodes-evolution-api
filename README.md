@@ -1,5 +1,11 @@
 ![image](https://github.com/user-attachments/assets/813b7b34-377c-42e8-9f1a-12e27e682c7f)
 
+---
+
+> **📝 Translation Notice** > _This is an English translation of the original Portuguese project by [OrionDesign](https://github.com/oriondesign2015/n8n-nodes-evolution-api). Comprehensive Portuguese-to-English translation completed by **Augment AI** on December 19, 2024, covering all documentation, code comments, field labels, and user-facing text to improve international accessibility while preserving full functionality and original attribution._
+
+---
+
 <p align="center"><br>
 This Community Node is a 100% free solution, created with the purpose of simplifying and helping the entire community to integrate and make the most of the main features offered by <b>Evolution API v2.2+</b> in their N8N projects. <b>Developed by OrionDesign.</b>
 </p>
@@ -16,14 +22,14 @@ This Community Node is a 100% free solution, created with the purpose of simplif
   <a href="https://oriondesign.art.br/whatsapp3"><img src="https://github.com/user-attachments/assets/91aa7733-c09c-474f-9483-54cb678213d2" alt="SetupOrion" ></a>
 </p>
 
-
 <h1></h1>
 
 <h3>⚙️ Requirements</h3>
 
-To use our **Community Node**, you need to meet the following requirements:  
-- **N8N** version **1.54.4** or higher  
-- **Evolution API** version **2.2.0** or higher  
+To use our **Community Node**, you need to meet the following requirements:
+
+- **N8N** version **1.54.4** or higher
+- **Evolution API** version **2.2.0** or higher
 
 <h1></h1>
 
@@ -240,11 +246,12 @@ To use our **Community Node**, you need to meet the following requirements:
 
 <h3>🤝 Contribution</h3>
 
-Contribute to the growth of this project! You can help in various ways:  
-- **Pull Requests**: Send improvements, fixes, or new features.  
-- **Issues**: Report problems or suggest new ideas.  
-- **Suggestions**: Share your opinions and feedback.  
-- **Documentation**: Help improve or expand existing documentation.  
+Contribute to the growth of this project! You can help in various ways:
+
+- **Pull Requests**: Send improvements, fixes, or new features.
+- **Issues**: Report problems or suggest new ideas.
+- **Suggestions**: Share your opinions and feedback.
+- **Documentation**: Help improve or expand existing documentation.
 
 <h1></h1>
 
