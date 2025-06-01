@@ -494,12 +494,12 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Palavra Chave De Finalização',
+		displayName: 'Termination Keyword',
 		name: 'unknownMessage',
 		type: 'string',
-		default: 'Mensagem não reconhecida',
+		default: 'Message not recognized',
 		required: true,
-		description: 'Digite a palavra/frase que sera usado para fechar o bot',
+		description: 'Enter the word/phrase that will be used to close the bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -509,11 +509,11 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Escuta Mensagens Enviadas Por Mim',
+		displayName: 'Listen to Messages Sent by Me',
 		name: 'listeningFromMe',
 		type: 'boolean',
 		default: false,
-		description: 'Whether',
+		description: 'Whether to listen to messages sent by the instance owner',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],

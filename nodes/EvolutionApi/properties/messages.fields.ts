@@ -1,14 +1,14 @@
 import { INodeProperties } from 'n8n-workflow';
 
 export const messagesFields: INodeProperties[] = [
-	// Campos = Enviar mensagem de texto
+	// Fields = Send text message
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Enter the name of the instance that will send the message',
 		displayOptions: {
 			show: {
 				resource: ['messages-api'],
@@ -17,12 +17,12 @@ export const messagesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Numero Do Destinatario',
+		displayName: 'Recipient Number',
 		name: 'remoteJid',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'RemoteJid do destinarario',
+		description: 'RemoteJid of the recipient',
 		displayOptions: {
 			show: {
 				resource: ['messages-api'],
@@ -31,12 +31,12 @@ export const messagesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Mensagem',
+		displayName: 'Message',
 		name: 'messageText',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite a mensagem de texto que será enviado',
+		description: 'Enter the text message that will be sent',
 		displayOptions: {
 			show: {
 				resource: ['messages-api'],

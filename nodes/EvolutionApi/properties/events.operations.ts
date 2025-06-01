@@ -23,7 +23,7 @@ export const eventsOperationsOptions: INodeProperties = {
 		{
 			// Set/find Rabbitmq
 			name: 'RabbitMQ',
-			action: 'RabbitMQ',
+			action: 'Rabbit mq',
 			description: 'Set/Fetch RabbitMQ integration',
 			value: 'rabbitmq',
 		},

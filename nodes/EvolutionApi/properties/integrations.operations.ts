@@ -1,14 +1,14 @@
 import { INodeProperties } from 'n8n-workflow';
 
-// Opções da integrations-api (Integração)
+// Integrations API options
 export const integrationsOperationsOptions: INodeProperties = {
-	displayName: 'Operação',
+	displayName: 'Operation',
 	name: 'operation',
 	type: 'options',
 	noDataExpression: true,
 	displayOptions: {
 		show: {
-			resource: ['integrations-api'], // Value do Resource
+			resource: ['integrations-api'], // Resource value
 		},
 	},
 	options: [
@@ -16,38 +16,38 @@ export const integrationsOperationsOptions: INodeProperties = {
 			// Set/find Chatwoot
 			name: 'Chatwoot',
 			action: 'Chatwoot',
-			description: 'Define/Busca integração com Chatwoot',
+			description: 'Set/Fetch Chatwoot integration',
 			value: 'chatwoot',
 		},
 		{
-			// Create/find/fetch/Update/Delete/Start/Change Status/Fetch Sessions da Evolution Bot
+			// Create/find/fetch/Update/Delete/Start/Change Status/Fetch Sessions for Evolution Bot
 			name: 'Evolution Bot',
 			action: 'Evolution bot',
-			description: 'Controla a integração com Evolution Bot',
+			description: 'Controls Evolution Bot integration',
 			value: 'evolution-bot',
 		},
 		{
-			// Create/find/fetch/Update/Delete/Start/Change Status/Fetch Sessions do Typebot
+			// Create/find/fetch/Update/Delete/Start/Change Status/Fetch Sessions for Typebot
 			name: 'Typebot',
 			action: 'Typebot',
-			description: 'Controla a integração com Typebot',
+			description: 'Controls Typebot integration',
 			value: 'typebot',
 		},
 		{
-			// Create/find/fetch/Update/Delete/Start/Change Status/Fetch Sessions da Dify
+			// Create/find/fetch/Update/Delete/Start/Change Status/Fetch Sessions for Dify
 			name: 'Dify',
 			action: 'Dify',
-			description: 'Controla a integração com Dify',
+			description: 'Controls Dify integration',
 			value: 'difyBot',
 		},
 		{
-			// Create/find/fetch/Update/Delete/Start/Change Status/Fetch Sessions da Dify
+			// Create/find/fetch/Update/Delete/Start/Change Status/Fetch Sessions for Flowise
 			name: 'Flowise',
 			action: 'Flowise',
-			description: 'Controla a integração com Flowise',
+			description: 'Controls Flowise integration',
 			value: 'flowiseBot',
 		},
 	],
-	// Definindo como padrão a opção "Enviar Texto"
+	// Setting "Chatwoot" as default option
 	default: 'chatwoot',
 };
