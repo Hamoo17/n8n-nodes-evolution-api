@@ -1,14 +1,14 @@
-import { INodeProperties, NodePropertyTypes } from 'n8n-workflow';
+﻿import { INodeProperties, NodePropertyTypes } from 'n8n-workflow';
 
 export const chatFields: INodeProperties[] = [
 	// Campos comuns para todas as operações
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Name Da Instância',
 		name: 'instanceName',
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância',
+		description: 'Digite o Name da instância',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -48,7 +48,7 @@ export const chatFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID Da Mensagem',
+		displayName: 'Message ID',
 		name: 'messageId',
 		type: 'string' as NodePropertyTypes,
 		default: '',
@@ -116,7 +116,7 @@ export const chatFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID Da Mensagem',
+		displayName: 'Message ID',
 		name: 'messageId',
 		type: 'string' as NodePropertyTypes,
 		default: '',
@@ -160,7 +160,7 @@ export const chatFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID Da Mensagem',
+		displayName: 'Message ID',
 		name: 'messageId',
 		type: 'string' as NodePropertyTypes,
 		default: '',
@@ -204,12 +204,12 @@ export const chatFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID Da Mensagem',
+		displayName: 'Message ID',
 		name: 'messageId',
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'ID da mensagem que será deletada',
+		description: 'Message ID que será deletada',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -247,7 +247,7 @@ export const chatFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos para buscar foto do perfil
+	// Campos para buscar Photo do perfil
 	{
 		displayName: 'Contato',
 		name: 'number',
@@ -265,12 +265,12 @@ export const chatFields: INodeProperties[] = [
 
 	// Campos para obter mídia em Base64
 	{
-		displayName: 'ID Da Mensagem',
+		displayName: 'Message ID',
 		name: 'messageId',
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'ID da mensagem que contém a mídia',
+		description: 'Message ID que contém a mídia',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -309,12 +309,12 @@ export const chatFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID Da Mensagem',
+		displayName: 'Message ID',
 		name: 'messageId',
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'ID da mensagem que será editada',
+		description: 'Message ID que será editada',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -522,7 +522,7 @@ export const chatFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID Da Mensagem',
+		displayName: 'Message ID',
 		name: 'messageId',
 		type: 'string' as NodePropertyTypes,
 		default: '',
@@ -580,7 +580,7 @@ export const chatFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID Da Mensagem',
+		displayName: 'Message ID',
 		name: 'messageId',
 		type: 'string' as NodePropertyTypes,
 		default: '',

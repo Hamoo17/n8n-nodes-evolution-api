@@ -1,15 +1,15 @@
-import { INodeProperties } from 'n8n-workflow';
+﻿import { INodeProperties } from 'n8n-workflow';
 
 // Campo das Eventos
 export const eventsFields: INodeProperties[] = [
-	// Campos = Webhook
+	// Fields = Webhook
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Digite o Name da instância que vai enviar a mensagem',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -18,7 +18,7 @@ export const eventsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'O Que Deseja Fazer',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForWebhook',
 		type: 'options',
 		options: [
@@ -205,14 +205,14 @@ export const eventsFields: INodeProperties[] = [
 		],
 	},
 
-	// Campos = RabbitMQ
+	// Fields = RabbitMQ
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Digite o Name da instância que vai enviar a mensagem',
 		displayOptions: {
 			show: {
 				resource: ['events-api'],
@@ -221,7 +221,7 @@ export const eventsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'O Que Deseja Fazer',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForRabbitMQ',
 		type: 'options',
 		options: [

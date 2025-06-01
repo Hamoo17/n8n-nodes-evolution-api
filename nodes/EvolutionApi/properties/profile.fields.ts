@@ -1,13 +1,13 @@
-import { INodeProperties, NodePropertyTypes } from 'n8n-workflow';
+﻿import { INodeProperties, NodePropertyTypes } from 'n8n-workflow';
 
 export const profileFields: INodeProperties[] = [
     {
-        displayName: 'Nome Da Instância',
+        displayName: 'Name Da Instância',
         name: 'instanceName',
         type: 'string' as NodePropertyTypes,
         default: '',
         required: true,
-        description: 'Digite o nome da instância',
+        description: 'Digite o Name da instância',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -15,12 +15,12 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'Nome',
+        displayName: 'Name',
         name: 'name',
         type: 'string' as NodePropertyTypes,
         default: '',
         required: true,
-        description: 'Novo nome do perfil',
+        description: 'Novo Name do perfil',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -52,7 +52,7 @@ export const profileFields: INodeProperties[] = [
         type: 'string' as NodePropertyTypes,
         default: '',
         required: true,
-        description: 'Novo status do perfil (máximo 139 caracteres)',
+        description: 'New profile status (máximo 139 caracteres)',
         typeOptions: {
             maxLength: 139,
         },
@@ -69,7 +69,7 @@ export const profileFields: INodeProperties[] = [
         type: 'string' as NodePropertyTypes,
         default: '',
         required: true,
-        description: 'URL da imagem que será definida como foto do perfil',
+        description: 'URL da imagem que será definida como Photo do perfil',
         displayOptions: {
             show: {
                 resource: ['profile-api'],
@@ -102,7 +102,7 @@ export const profileFields: INodeProperties[] = [
         },
     },
     {
-        displayName: 'Foto Do Perfil',
+        displayName: 'Photo Do Perfil',
         name: 'profile',
         type: 'options' as NodePropertyTypes,
         options: [
@@ -125,7 +125,7 @@ export const profileFields: INodeProperties[] = [
         ],
         default: 'all',
         required: true,
-        description: 'Quem pode ver sua foto de perfil',
+        description: 'Quem pode ver sua Photo de perfil',
         displayOptions: {
             show: {
                 resource: ['profile-api'],

@@ -1,15 +1,15 @@
-import { INodeProperties } from 'n8n-workflow';
+﻿import { INodeProperties } from 'n8n-workflow';
 
 // Campos das instancias
 export const instancesFields: INodeProperties[] = [
-	// Campos = Criar Instancia
+	// Fields = Criar Instancia
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Name Da Instância',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome para a instância',
+		description: 'Digite o Name para a instância',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -53,7 +53,7 @@ export const instancesFields: INodeProperties[] = [
 		displayName: 'Opções',
 		name: 'options_Create_instance',
 		type: 'collection',
-		placeholder: 'Adicionar Campo',
+		placeholder: 'Add Field',
 		default: {},
 		options: [
 			{
@@ -122,11 +122,11 @@ export const instancesFields: INodeProperties[] = [
 								description: 'Whether to import contacts to Chatwoot',
 							},
 							{
-								displayName: 'Nome Da Inbox Do Chatwoot',
+								displayName: 'Name Da Inbox Do Chatwoot',
 								name: 'chatwootNameInbox',
 								type: 'string',
 								default: '',
-								description: 'Digite o nome da Inbox do Chatwoot',
+								description: 'Digite o Name da Inbox do Chatwoot',
 							},
 							{
 								displayName: 'Mesclar Contatos Brasileiros No Chatwoot',
@@ -151,11 +151,11 @@ export const instancesFields: INodeProperties[] = [
 									'Digite o número de dias para limitar a importação de mensagens para o Chatwoot',
 							},
 							{
-								displayName: 'Nome Do Contato De QRCode No Chatwoot',
+								displayName: 'Name Do Contato De QRCode No Chatwoot',
 								name: 'chatwootOrganization',
 								type: 'string',
 								default: '',
-								description: 'Digite o nome do contato de QRCode no Chatwoot',
+								description: 'Digite o Name do contato de QRCode no Chatwoot',
 							},
 							{
 								displayName: 'Url Do Logo Para O Contato No Chatwoot',
@@ -199,7 +199,7 @@ export const instancesFields: INodeProperties[] = [
 									'Whether to send a message after rejecting a call, and if so, what message',
 							},
 							{
-								displayName: 'Ignorar Grupos',
+								displayName: 'Ignore Groups',
 								name: 'groupsIgnore',
 								type: 'boolean',
 								default: false,
@@ -220,7 +220,7 @@ export const instancesFields: INodeProperties[] = [
 								description: 'Whether to automatically mark messages as read',
 							},
 							{
-								displayName: 'Ler Status',
+								displayName: 'Read Status',
 								name: 'readStatus',
 								type: 'boolean',
 								default: false,
@@ -578,14 +578,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos = Conectar Instância
+	// Fields = Conectar Instância
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Name Da Instância',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que deseja pesquisar',
+		description: 'Digite o Name da instância que deseja pesquisar',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -594,14 +594,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos = Buscar Instancia
+	// Fields = Buscar Instancia
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Name Da Instância',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 
-		description: 'Digite o nome da instância que deseja pesquisar',
+		description: 'Digite o Name da instância que deseja pesquisar',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -610,14 +610,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos = Definir Comportamento
+	// Fields = Definir Comportamento
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Name Da Instância',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome para a instância',
+		description: 'Digite o Name para a instância',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -639,12 +639,12 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Mensagem De Chamadas',
+		displayName: 'Call Message',
 		name: 'msgCall',
 		type: 'string',
 		default: 'Não aceitamos ligações telefônicas.',
 
-		description: 'Mensagem a ser enviada se as chamadas forem rejeitadas',
+		description: 'Message to be sent if calls are rejected',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -653,7 +653,7 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Ignorar Grupos',
+		displayName: 'Ignore Groups',
 		name: 'groupsIgnore',
 		type: 'boolean',
 		default: false,
@@ -705,7 +705,7 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Ler Status',
+		displayName: 'Read Status',
 		name: 'readStatus',
 		type: 'boolean',
 		default: false,
@@ -718,14 +718,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos = Definir presença
+	// Fields = Definir presença
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Name Da Instância',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância',
+		description: 'Digite o Name da instância',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -758,14 +758,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos = Proxy
+	// Fields = Proxy
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Digite o Name da instância que vai enviar a mensagem',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -775,7 +775,7 @@ export const instancesFields: INodeProperties[] = [
 	},
 
 	{
-		displayName: 'O Que Deseja Fazer',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForProxy',
 		type: 'options',
 		options: [
@@ -899,14 +899,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos = Reiniciar instancia
+	// Fields = Reiniciar instancia
 	{
-		displayName: 'Nome Da Insticância',
+		displayName: 'Name Da Insticância',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que deseja pesquisar',
+		description: 'Digite o Name da instância que deseja pesquisar',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -915,14 +915,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos = Desconectar instancia
+	// Fields = Desconectar instancia
 	{
-		displayName: 'Nome Da Insticância',
+		displayName: 'Name Da Insticância',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que deseja pesquisar',
+		description: 'Digite o Name da instância que deseja pesquisar',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -931,14 +931,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos = Deletar instancia
+	// Fields = Deletar instancia
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai ser deletada',
+		description: 'Digite o Name da instância que vai ser deletada',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],

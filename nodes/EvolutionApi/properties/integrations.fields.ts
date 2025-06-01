@@ -1,14 +1,14 @@
-import { INodeProperties } from 'n8n-workflow';
+﻿import { INodeProperties } from 'n8n-workflow';
 
 export const integrationsFields: INodeProperties[] = [
-	// Campos = Chatwoot
+	// Fields = Chatwoot
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Digite o Name da instância que vai enviar a mensagem',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -17,21 +17,21 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'O Que Deseja Fazer',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForChatwoot',
 		type: 'options',
 		options: [
 			{
-				name: 'Definir Chatwoot',
+				name: 'Set Chatwoot',
 				value: 'setChatwoot',
 			},
 			{
-				name: 'Verificar Chatwoot',
+				name: 'Check Chatwoot',
 				value: 'findChatwoot',
 			},
 		],
 		default: 'setChatwoot',
-		description: 'Escolha entre ativar/desativar Chatwoot ou verificar o Chatwoot',
+		description: 'Choose between activating/deactivating Chatwoot or checking Chatwoot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -158,11 +158,11 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Nome Da Inbox Do Chatwoot',
+		displayName: 'Name Da Inbox Do Chatwoot',
 		name: 'chatwootNameInbox',
 		type: 'string',
 		default: '',
-		description: 'Opicional: Digite o nome da Inbox do Chatwoot',
+		description: 'Opicional: Digite o Name da Inbox do Chatwoot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -229,11 +229,11 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Nome Do Contato De QRCode No Chatwoot',
+		displayName: 'Name Do Contato De QRCode No Chatwoot',
 		name: 'chatwootOrganization',
 		type: 'string',
 		default: '',
-		description: 'Opicional: Digite o nome do contato de QRCode no Chatwoot',
+		description: 'Opicional: Digite o Name do contato de QRCode no Chatwoot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -257,14 +257,14 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos = Typebot
+	// Fields = Typebot
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Digite o Name da instância que vai enviar a mensagem',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -274,7 +274,7 @@ export const integrationsFields: INodeProperties[] = [
 	},
 
 	{
-		displayName: 'O Que Deseja Fazer',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForTypebot',
 		type: 'options',
 		options: [
@@ -356,12 +356,12 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Nome Do Typebot',
+		displayName: 'Name Do Typebot',
 		name: 'typebot',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome do seu fluxo no typebot',
+		description: 'Digite o Name do seu fluxo no typebot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -454,7 +454,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'number',
 		default: 0,
 		required: true,
-		description: 'Digite quantos minutos sem respostas o bot devera ser desativado',
+		description: 'Digite quantos minutos sem respostas o bot devera ser Disabled',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -469,7 +469,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: '#sair',
 		required: true,
-		description: 'Digite a palavra/frase que sera usado para fechar o bot',
+		description: 'Enter the word/phrase that will be used to close the bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -537,7 +537,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Mantem a Sessão Do Bot Aberta',
+		displayName: 'Mantem a Sessão Do Bot Open',
 		name: 'keepOpen',
 		type: 'boolean',
 		default: false,
@@ -611,18 +611,18 @@ export const integrationsFields: INodeProperties[] = [
 				displayName: 'Variável',
 				values: [
 					{
-						displayName: 'Nome Da Variavel',
+						displayName: 'Name Da Variavel',
 						name: 'name',
 						type: 'string',
 						default: '',
-						description: 'Nome da variável',
+						description: 'Name da variável',
 					},
 					{
-						displayName: 'Valor Da Variavel',
+						displayName: 'Value Da Variavel',
 						name: 'value',
 						type: 'string',
 						default: '',
-						description: 'Valor da variável',
+						description: 'Value da variável',
 					},
 				],
 			},
@@ -644,15 +644,15 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'options',
 		options: [
 			{
-				name: 'Aberta',
+				name: 'Open',
 				value: 'opened',
 			},
 			{
-				name: 'Pausada',
+				name: 'Paused',
 				value: 'paused',
 			},
 			{
-				name: 'Fechada',
+				name: 'Closed',
 				value: 'closed',
 			},
 		],
@@ -669,12 +669,12 @@ export const integrationsFields: INodeProperties[] = [
 
 	// EVOLUTION BOT
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Digite o Name da instância que vai enviar a mensagem',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -684,7 +684,7 @@ export const integrationsFields: INodeProperties[] = [
 	},
 
 	{
-		displayName: 'O Que Deseja Fazer',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForEvolutionBot',
 		type: 'options',
 		options: [
@@ -860,7 +860,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'number',
 		default: 0,
 		required: true,
-		description: 'Digite quantos minutos sem respostas o bot devera ser desativado',
+		description: 'Digite quantos minutos sem respostas o bot devera ser Disabled',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -875,7 +875,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: '#sair',
 		required: true,
-		description: 'Digite a palavra/frase que sera usado para fechar o bot',
+		description: 'Enter the word/phrase that will be used to close the bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -905,7 +905,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: 'Mensagem não reconhecida',
 		required: true,
-		description: 'Digite a palavra/frase que sera usado para fechar o bot',
+		description: 'Enter the word/phrase that will be used to close the bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -915,7 +915,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Escuta Mensagens Enviadas Por Mim',
+		displayName: 'Listen to Messages Sent by Me',
 		name: 'listeningFromMe',
 		type: 'boolean',
 		default: false,
@@ -943,7 +943,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Mantem a Sessão Do Bot Aberta',
+		displayName: 'Mantem a Sessão Do Bot Open',
 		name: 'keepOpen',
 		type: 'boolean',
 		default: false,
@@ -995,15 +995,15 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'options',
 		options: [
 			{
-				name: 'Aberta',
+				name: 'Open',
 				value: 'opened',
 			},
 			{
-				name: 'Pausada',
+				name: 'Paused',
 				value: 'paused',
 			},
 			{
-				name: 'Fechada',
+				name: 'Closed',
 				value: 'closed',
 			},
 		],
@@ -1020,12 +1020,12 @@ export const integrationsFields: INodeProperties[] = [
 
 	// Dify
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Digite o Name da instância que vai enviar a mensagem',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1034,7 +1034,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'O Que Deseja Fazer',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForDifyBot',
 		type: 'options',
 		options: [
@@ -1243,7 +1243,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'number',
 		default: 0,
 		required: true,
-		description: 'Digite quantos minutos sem respostas o bot devera ser desativado',
+		description: 'Digite quantos minutos sem respostas o bot devera ser Disabled',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1258,7 +1258,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: '#sair',
 		required: true,
-		description: 'Digite a palavra/frase que sera usado para fechar o bot',
+		description: 'Enter the word/phrase that will be used to close the bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1288,7 +1288,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: 'Mensagem não reconhecida',
 		required: true,
-		description: 'Digite a palavra/frase que sera usado para fechar o bot',
+		description: 'Enter the word/phrase that will be used to close the bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1298,7 +1298,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Escuta Mensagens Enviadas Por Mim',
+		displayName: 'Listen to Messages Sent by Me',
 		name: 'listeningFromMe',
 		type: 'boolean',
 		default: false,
@@ -1326,7 +1326,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Mantem a Sessão Do Bot Aberta',
+		displayName: 'Mantem a Sessão Do Bot Open',
 		name: 'keepOpen',
 		type: 'boolean',
 		default: false,
@@ -1378,15 +1378,15 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'options',
 		options: [
 			{
-				name: 'Aberta',
+				name: 'Open',
 				value: 'opened',
 			},
 			{
-				name: 'Pausada',
+				name: 'Paused',
 				value: 'paused',
 			},
 			{
-				name: 'Fechada',
+				name: 'Closed',
 				value: 'closed',
 			},
 		],
@@ -1402,12 +1402,12 @@ export const integrationsFields: INodeProperties[] = [
 	},
 
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da instância que vai enviar a mensagem',
+		description: 'Digite o Name da instância que vai enviar a mensagem',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1416,7 +1416,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'O Que Deseja Fazer',
+		displayName: 'What Do You Want to Do',
 		name: 'resourceForFlowiseBot',
 		type: 'options',
 		options: [
@@ -1592,7 +1592,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'number',
 		default: 0,
 		required: true,
-		description: 'Digite quantos minutos sem respostas o bot devera ser desativado',
+		description: 'Digite quantos minutos sem respostas o bot devera ser Disabled',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1607,7 +1607,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: '#sair',
 		required: true,
-		description: 'Digite a palavra/frase que sera usado para fechar o bot',
+		description: 'Enter the word/phrase that will be used to close the bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1637,7 +1637,7 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'string',
 		default: 'Mensagem não reconhecida',
 		required: true,
-		description: 'Digite a palavra/frase que sera usado para fechar o bot',
+		description: 'Enter the word/phrase that will be used to close the bot',
 		displayOptions: {
 			show: {
 				resource: ['integrations-api'],
@@ -1647,7 +1647,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Escuta Mensagens Enviadas Por Mim',
+		displayName: 'Listen to Messages Sent by Me',
 		name: 'listeningFromMe',
 		type: 'boolean',
 		default: false,
@@ -1675,7 +1675,7 @@ export const integrationsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Mantem a Sessão Do Bot Aberta',
+		displayName: 'Mantem a Sessão Do Bot Open',
 		name: 'keepOpen',
 		type: 'boolean',
 		default: false,
@@ -1727,15 +1727,15 @@ export const integrationsFields: INodeProperties[] = [
 		type: 'options',
 		options: [
 			{
-				name: 'Aberta',
+				name: 'Open',
 				value: 'opened',
 			},
 			{
-				name: 'Pausada',
+				name: 'Paused',
 				value: 'paused',
 			},
 			{
-				name: 'Fechada',
+				name: 'Closed',
 				value: 'closed',
 			},
 		],
@@ -1751,7 +1751,7 @@ export const integrationsFields: INodeProperties[] = [
 	},
 
 	{
-		displayName: 'JIDs Ignorados',
+		displayName: 'Ignored JIDs',
 		name: 'ignoreJids',
 		type: 'string',
 		typeOptions: {
