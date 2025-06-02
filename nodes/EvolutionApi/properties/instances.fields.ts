@@ -1,15 +1,15 @@
 ﻿import { INodeProperties } from 'n8n-workflow';
 
-// Campos das instancias
+// Instance fields
 export const instancesFields: INodeProperties[] = [
-	// Fields = Criar Instancia
+	// Fields = Create Instance
 	{
-		displayName: 'Name Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o Name para a instância',
+		description: 'Enter the name for the instance',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -35,13 +35,13 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Número Do WhatsApp',
+		displayName: 'WhatsApp Number',
 		name: 'number',
 		type: 'string',
 		default: '',
 
 		description:
-			'Opicional: Numero que vai ser conectado na instancia, para receber o Código de pareamento',
+			'Optional: Number to be connected to the instance to receive the pairing code',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -50,7 +50,7 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Opções',
+		displayName: 'Options',
 		name: 'options_Create_instance',
 		type: 'collection',
 		placeholder: 'Add Field',
@@ -66,11 +66,11 @@ export const instancesFields: INodeProperties[] = [
 				default: { settings: {} },
 				options: [
 					{
-						displayName: 'Configurações Do Chatwoot',
+						displayName: 'Chatwoot Settings',
 						name: 'chatwootSettings',
 						values: [
 							{
-								displayName: 'ID Da Conta Do Chatwoot',
+								displayName: 'Chatwoot Account ID',
 								name: 'chatwootAccountId',
 								type: 'string',
 								default: '',
@@ -168,7 +168,7 @@ export const instancesFields: INodeProperties[] = [
 						],
 					},
 				],
-				description: 'Configurações do Chatwoot',
+				description: 'Chatwoot settings',
 			},
 			{
 				displayName: 'Comportamento',
@@ -184,7 +184,7 @@ export const instancesFields: INodeProperties[] = [
 						name: 'settings',
 						values: [
 							{
-								displayName: 'Rejeitar Ligações',
+								displayName: 'Reject Calls',
 								name: 'rejectCall',
 								type: 'boolean',
 								default: false,
@@ -227,7 +227,7 @@ export const instancesFields: INodeProperties[] = [
 								description: 'Whether to allow the API to view the Status of added contacts',
 							},
 							{
-								displayName: 'Sincronizar Histórico',
+								displayName: 'Sync History',
 								name: 'syncFullHistory',
 								type: 'boolean',
 								default: false,
@@ -236,7 +236,7 @@ export const instancesFields: INodeProperties[] = [
 						],
 					},
 				],
-				description: 'Comportamento da instância',
+				description: 'Instance behavior',
 			},
 			{
 				displayName: 'Proxy',
@@ -248,11 +248,11 @@ export const instancesFields: INodeProperties[] = [
 				default: { settings: {} },
 				options: [
 					{
-						displayName: 'Configurações Do Proxy',
+						displayName: 'Proxy Settings',
 						name: 'proxySettings',
 						values: [
 							{
-								displayName: 'Host Do Proxy',
+								displayName: 'Proxy Host',
 								name: 'proxyHost',
 								type: 'string',
 								default: '',
@@ -283,26 +283,26 @@ export const instancesFields: INodeProperties[] = [
 								description: 'Selecione o protocolo do proxy',
 							},
 							{
-								displayName: 'Usuário Do Proxy',
+								displayName: 'Proxy User',
 								name: 'proxyUsername',
 								type: 'string',
 								default: '',
-								description: 'Digite o usuário do proxy',
+								description: 'Enter the proxy username',
 							},
 							{
-								displayName: 'Senha Do Proxy',
+								displayName: 'Proxy Password',
 								name: 'proxyPassword',
 								type: 'string',
 								typeOptions: {
 									password: true,
 								},
 								default: '',
-								description: 'Digite a senha do proxy',
+								description: 'Enter the proxy password',
 							},
 						],
 					},
 				],
-				description: 'Configurações do proxy',
+				description: 'Proxy settings',
 			},
 			{
 				displayName: 'RabbitMQ',
@@ -314,11 +314,11 @@ export const instancesFields: INodeProperties[] = [
 				default: { settings: {} },
 				options: [
 					{
-						displayName: 'Configurações Do RabbitMQ',
+						displayName: 'RabbitMQ Settings',
 						name: 'rabbitmqSettings',
 						values: [
 							{
-								displayName: 'Ativa Ou Desativa O RabbitMQ',
+								displayName: 'Enable or Disable RabbitMQ',
 								name: 'rabbitmqEnabled',
 								type: 'boolean',
 								default: false,
@@ -439,11 +439,11 @@ export const instancesFields: INodeProperties[] = [
 				default: { settings: {} },
 				options: [
 					{
-						displayName: 'Configurações Do Webhook',
+						displayName: 'Webhook Settings',
 						name: 'webhookSettings',
 						values: [
 							{
-								displayName: 'Url Do Webhook',
+								displayName: 'Webhook URL',
 								name: 'webhookUrl',
 								type: 'string',
 								default: '',
@@ -578,14 +578,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Fields = Conectar Instância
+	// Fields = Connect Instance
 	{
-		displayName: 'Name Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o Name da instância que deseja pesquisar',
+		description: 'Enter the name of the instance you want to search',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -594,14 +594,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Fields = Buscar Instancia
+	// Fields = Search Instance
 	{
-		displayName: 'Name Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 
-		description: 'Digite o Name da instância que deseja pesquisar',
+		description: 'Enter the name of the instance you want to search',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -610,14 +610,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Fields = Definir Comportamento
+	// Fields = Define Behavior
 	{
-		displayName: 'Name Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o Name para a instância',
+		description: 'Enter the name for the instance',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -692,11 +692,11 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Sincronizar Histórico Completo',
+		displayName: 'Sync Full History',
 		name: 'syncFullHistory',
 		type: 'boolean',
 		default: false,
-		description: 'Whether to mention them all history or not',
+		description: 'Whether to synchronize the full message history',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -718,14 +718,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Fields = Definir presença
+	// Fields = Set Presence
 	{
-		displayName: 'Name Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o Name da instância',
+		description: 'Enter the instance name',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -734,22 +734,22 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Presença',
+		displayName: 'Presence',
 		name: 'presence',
 		type: 'options',
 		options: [
 			{
-				name: 'Disponível',
+				name: 'Available',
 				value: 'available',
 			},
 			{
-				name: 'Indisponível',
+				name: 'Unavailable',
 				value: 'unavailable',
 			},
 		],
 		default: 'available',
 		required: true,
-		description: 'Status de presença da instância',
+		description: 'Instance presence status',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -765,7 +765,7 @@ export const instancesFields: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o Name da instância que vai enviar a mensagem',
+		description: 'Enter the name of the instance that will send the message',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -866,12 +866,12 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Usuário Do Proxy',
+		displayName: 'Proxy User',
 		name: 'proxyUsername',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o usuário do proxy',
+		description: 'Enter the proxy username',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -899,14 +899,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Fields = Reiniciar instancia
+	// Fields = Restart Instance
 	{
-		displayName: 'Name Da Insticância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o Name da instância que deseja pesquisar',
+		description: 'Enter the name of the instance you want to search',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -915,14 +915,14 @@ export const instancesFields: INodeProperties[] = [
 		},
 	},
 
-	// Fields = Desconectar instancia
+	// Fields = Disconnect Instance
 	{
-		displayName: 'Name Da Insticância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o Name da instância que deseja pesquisar',
+		description: 'Enter the name of the instance you want to search',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
@@ -938,7 +938,7 @@ export const instancesFields: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o Name da instância que vai ser deletada',
+		description: 'Enter the name of the instance to be deleted',
 		displayOptions: {
 			show: {
 				resource: ['instances-api'],
