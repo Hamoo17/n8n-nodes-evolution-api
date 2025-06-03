@@ -137,8 +137,8 @@ export async function setEvolutionBot(ef: IExecuteFunctions) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Operação do Evolution Bot não reconhecida',
-						details: 'A operação solicitada não é válida para o recurso do Evolution Bot',
+					message: 'Evolution Bot operation not recognized',
+						details: 'The requested operation is not valid for the Evolution Bot resource',
 						code: 'INVALID_OPERATION',
 						timestamp: new Date().toISOString(),
 				},

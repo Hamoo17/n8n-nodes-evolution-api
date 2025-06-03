@@ -8,7 +8,7 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendPoll(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Required parameters
 		const instanceName = ef.getNodeParameter('instanceName', 0);
 		const remoteJid = ef.getNodeParameter('remoteJid', 0);
 		const pollTitle = ef.getNodeParameter('caption', 0);
@@ -16,7 +16,7 @@ export async function sendPoll(ef: IExecuteFunctions) {
 			optionValue: string;
 		}[];
 
-		// Opções adicionais
+		// Additional options
 		const options_message = ef.getNodeParameter('options_message', 0, {}) as {
 			delay?: number;
 			quoted?: {

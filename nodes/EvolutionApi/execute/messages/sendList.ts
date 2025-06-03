@@ -25,13 +25,13 @@ export async function sendList(ef: IExecuteFunctions) {
 			};
 		}[];
 
-		// Validação das seções
+		// Section validation
 		if (!Array.isArray(sections) || sections.length === 0) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Lista de seções inválida',
-					details: 'É necessário fornecer pelo menos uma seção com opções',
+					message: 'Invalid section list',
+					details: 'At least one section with options must be provided',
 					code: 'INVALID_SECTIONS',
 					timestamp: new Date().toISOString(),
 				},
@@ -42,7 +42,7 @@ export async function sendList(ef: IExecuteFunctions) {
 			};
 		}
 
-		// Opções adicionais
+		// Additional options
 		const options = ef.getNodeParameter('options_message', 0, {}) as {
 			footer?: string;
 			delay?: number;

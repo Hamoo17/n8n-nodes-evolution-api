@@ -23,7 +23,6 @@ export const chatFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'List of numbers to check (comma separated)',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],

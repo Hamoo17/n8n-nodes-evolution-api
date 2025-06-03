@@ -1,6 +1,6 @@
 {
   "name": "@ahmed-kamal/n8n-nodes-evolution-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Evolution API n8n node - English translation of WhatsApp integration for n8n workflows",
   "keywords": [
     "n8n-community-node-package"

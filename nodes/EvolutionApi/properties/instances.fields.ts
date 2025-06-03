@@ -180,7 +180,7 @@ export const instancesFields: INodeProperties[] = [
 				default: { settings: {} },
 				options: [
 					{
-						displayName: 'Comportamento Da Instancia',
+						displayName: 'Instance Behavior',
 						name: 'settings',
 						values: [
 							{
@@ -191,7 +191,7 @@ export const instancesFields: INodeProperties[] = [
 								description: 'Whether to automatically reject incoming calls',
 							},
 							{
-								displayName: 'Mensagem Ao Rejeitar',
+								displayName: 'Message When Rejecting',
 								name: 'msgCall',
 								type: 'string',
 								default: '',
@@ -206,7 +206,7 @@ export const instancesFields: INodeProperties[] = [
 								description: 'Whether to ignore messages from groups',
 							},
 							{
-								displayName: 'Sempre Online',
+								displayName: 'Always Online',
 								name: 'alwaysOnline',
 								type: 'boolean',
 								default: false,

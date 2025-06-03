@@ -46,8 +46,8 @@ export async function setProxy(ef: IExecuteFunctions) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Operação de Proxy não reconhecida',
-					details: 'A operação solicitada não é válida para o recurso de Proxy',
+					message: 'Proxy operation not recognized',
+					details: 'The requested operation is not valid for the Proxy resource',
 					code: 'INVALID_OPERATION',
 					timestamp: new Date().toISOString(),
 				},

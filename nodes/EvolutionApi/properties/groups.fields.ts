@@ -44,7 +44,7 @@ export const groupsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Participantes',
+		displayName: 'Participants',
 		name: 'participants',
 		type: 'string' as NodePropertyTypes,
 		default: '',
